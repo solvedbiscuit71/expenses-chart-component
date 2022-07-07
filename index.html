@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Expenses Chart Component</title>
+    <link rel="shortcut icon" href="images/favicon.png" type="image/png" />
+    <link rel="stylesheet" href="src/main.css" />
+  </head>
+  <body>
+    <header>
+      <h1>
+        <span>My balance</span>
+        $921.48
+      </h1>
+      <img src="images/logo.svg" alt="logo" />
+    </header>
+
+    <main>
+      <div class="graph-container">
+        <h1>Spending - Last 7 days</h1>
+
+        <!-- mobile: 1% = 3px -->
+        <div class="graph">
+          <div class="bar bar-1"></div>
+          <div class="bar bar-2"></div>
+          <div class="bar bar-3 bar-highest"></div>
+          <div class="bar bar-4"></div>
+          <div class="bar bar-5"></div>
+          <div class="bar bar-6"></div>
+          <div class="bar bar-7"></div>
+
+          <div class="label label-1">mon</div>
+          <div class="label label-2">tue</div>
+          <div class="label label-3">wed</div>
+          <div class="label label-4">thu</div>
+          <div class="label label-5">fri</div>
+          <div class="label label-6">sat</div>
+          <div class="label label-7">sun</div>
+        </div>
+      </div>
+      <div class="seperator"></div>
+      <div class="summary">
+        <div class="summary-total">
+          <h2>Total this month</h2>
+          <p>$478.33</p>
+        </div>
+        <div class="summary-last-month">
+          <p>+2.4%</p>
+          <h2>from last month</h2>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>
