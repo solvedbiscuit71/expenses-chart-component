@@ -8,6 +8,8 @@
     <title>Expenses Chart Component</title>
     <link rel="shortcut icon" href="images/favicon.png" type="image/png" />
     <link rel="stylesheet" href="src/main.css" />
+
+    <script src="src/index.js" defer></script>
   </head>
   <body>
     <header>
@@ -21,27 +23,13 @@
     <main>
       <div class="graph-container">
         <h1>Spending - Last 7 days</h1>
-
-        <!-- mobile: 1% = 3px -->
-        <div class="graph">
-          <div class="bar bar-1"></div>
-          <div class="bar bar-2"></div>
-          <div class="bar bar-3 bar-highest"></div>
-          <div class="bar bar-4"></div>
-          <div class="bar bar-5"></div>
-          <div class="bar bar-6"></div>
-          <div class="bar bar-7"></div>
-
-          <div class="label label-1">mon</div>
-          <div class="label label-2">tue</div>
-          <div class="label label-3">wed</div>
-          <div class="label label-4">thu</div>
-          <div class="label label-5">fri</div>
-          <div class="label label-6">sat</div>
-          <div class="label label-7">sun</div>
+        <div class="graph" id="graph">
+          <!-- dynamically loaded by src/index.js using data.json -->
         </div>
       </div>
+
       <div class="seperator"></div>
+
       <div class="summary">
         <div class="summary-total">
           <h2>Total this month</h2>
