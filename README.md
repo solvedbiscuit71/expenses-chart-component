@@ -12,8 +12,8 @@ Users should be able to:
 
 ## Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [Click Me](https://www.frontendmentor.io/solutions/simple-chart-component-with-vanilla-css-and-js-N33xjDFMeV)
+- Live Site URL: [Click Me](https://solvedbiscuit71.github.io/expenses-chart-component/)
 
 ## Layout
 
