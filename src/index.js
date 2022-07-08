@@ -22,7 +22,7 @@ function loadLabels(name) {
 }
 
 async function loadData() {
-  let res = await fetch("data.json");
+  let res = await fetch("public/data.json");
   let data = await res.json();
 
   return data;
