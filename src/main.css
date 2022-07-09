@@ -139,7 +139,7 @@ main {
 .tooltip {
   position: absolute;
   top: 0;
-  left: -22%;
+  left: -50%;
 
   transform: translateY(-120%);
   transition: opacity 200ms ease-in-out;
@@ -147,6 +147,7 @@ main {
 
   display: grid;
   place-content: center;
+  z-index: 10000000;
 
   content: "";
   color: var(--clr-white);
@@ -159,6 +160,20 @@ main {
 
   width: 72px;
   min-height: 40px;
+}
+.bar:hover {
+  --clr-red: hsla(10, 79%, 65%, 0.8);
+  cursor: pointer;
+  background-color: var(--clr-red);
+}
+
+.bar-highest:hover {
+  --clr-cyan: hsla(186, 34%, 60%, 0.8);
+  background-color: var(--clr-cyan);
+}
+
+.bar:hover > .tooltip {
+  opacity: 1;
 }
 
 .label {
@@ -300,6 +315,9 @@ main {
   .bar-highest:hover {
     --clr-cyan: hsla(186, 34%, 60%, 0.8);
     background-color: var(--clr-cyan);
+  }
+  .tooltip {
+    left: -22%;
   }
 
   .bar:hover > .tooltip {
